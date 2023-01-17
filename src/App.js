@@ -7,7 +7,7 @@ import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Ka
 import './App.css';
 
 const App = () => {
-    const activeMenu = false;
+    const activeMenu = true;
     
     return (
         <div>
@@ -51,13 +51,11 @@ const App = () => {
                                 <Route path="/ecommerce" element={<Ecommerce />} />
 
                                 {/* Pages */}
-                                
                                 <Route path="/orders" element={<Orders />} />
                                 <Route path="/employee" element={<Employees />} />
                                 <Route path="/customners" element={<Customers />} />
 
                                 {/* Apps */}
-
                                 <Route path="/kanban" element={<Kanban />} />
                                 <Route path="/editor" element={<Editor />} />
                                 <Route path="/calendar" element={<Calendar />} />
