@@ -23,7 +23,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor}) => (
                 className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"
             />
             {icon}
-       
+
             
         </button>
     </TooltipComponent>
@@ -49,9 +49,9 @@ const Navbar = () => {
         }
     }, [screenSize])
     return (
-        <div className="flex justify-between p-2 md:ml-6 md:mr-6 relative">
+        <div className="flex justify-between p-2 md:mx-6 relative">
             <NavButton title="Menu" customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)}
-            color="blue" icon={< AiOutlineMenu/>}/>
+            color="blue" icon={< AiOutlineMenu />}/>
             <div className="flex">
                 <NavButton 
                     title="Cart" 
@@ -87,7 +87,7 @@ const Navbar = () => {
                         <p>
                             <span className="text-gray-400
                             text-14">Hi, </span>{' '}
-                            <sapn className="text-gray-400 font-bold ml-1 text-14">Roberto</sapn>
+                            <span className="text-gray-400 font-bold ml-1 text-14">Roberto</span>
                         </p>
                         <MdKeyboardArrowDown
                         className="text-gray-400 text-14" />
