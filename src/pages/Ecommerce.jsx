@@ -10,6 +10,7 @@ import { useStateContext } from '../contexts/ContextProvider';
 import product9 from '../data/product9.jpg';
 
 const Ecommerce = () => {
+
     const {currentColor} = useStateContext();
     return (
         <div className="mt-12">
