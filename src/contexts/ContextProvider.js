@@ -16,6 +16,7 @@ export const ContextProvider = ({ children }) => {
     const [currentColor, setCurrentColor] = useState('#03C9D7')
     const [currentMode, setCurrentMode] = useState('Light')
     const [themeSettings, setThemeSettings] = useState(false)
+    const [cartSettings, setCart] = useState(false)
     const setMode = (e) => {
         setCurrentMode(e.target.value);
 
@@ -32,8 +33,11 @@ export const ContextProvider = ({ children }) => {
         setThemeSettings(false)
     }
     const handleClick = (clicked) => {
-        setIsClicked({...initialState, [clicked]:true})
+        setIsClicked({...initialState, [clicked]:true});
+        setCart(false);
+        
     }
+   
     return (
         <StateContext.Provider 
             value={{ 
@@ -46,7 +50,8 @@ export const ContextProvider = ({ children }) => {
                     currentColor,currentMode,
                     setCurrentColor, setCurrentMode,
                     themeSettings, setThemeSettings,
-                    setMode, setColor
+                    setMode, setColor,
+                    cartSettings, setCart
                     }}
                     >
                 {children}
