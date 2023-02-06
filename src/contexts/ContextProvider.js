@@ -17,6 +17,7 @@ export const ContextProvider = ({ children }) => {
     const [currentMode, setCurrentMode] = useState('Light')
     const [themeSettings, setThemeSettings] = useState(false)
     const [cartSettings, setCart] = useState(false)
+    const [chatSettings, setChat] = useState(false)
     const setMode = (e) => {
         setCurrentMode(e.target.value);
 
@@ -35,6 +36,7 @@ export const ContextProvider = ({ children }) => {
     const handleClick = (clicked) => {
         setIsClicked({...initialState, [clicked]:true});
         setCart(false);
+        setChat(false);
         
     }
    
@@ -51,7 +53,8 @@ export const ContextProvider = ({ children }) => {
                     setCurrentColor, setCurrentMode,
                     themeSettings, setThemeSettings,
                     setMode, setColor,
-                    cartSettings, setCart
+                    cartSettings, setCart,
+                    chatSettings,setChat
                     }}
                     >
                 {children}
