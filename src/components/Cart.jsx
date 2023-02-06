@@ -21,7 +21,7 @@ const Cart = () => {
                             style={{ color:'rgb(153, 171, 180)', 
                             borderRadius: '50%' }}
                             className="text-2xl p-3
-                            hover:drop-shadow-xl hover:bg-light-gray">
+                            hover:drop-shadow-xl hover:bg-light-gray ">
                             <MdOutlineCancel />
                     </button>
                 </div>
