@@ -56,9 +56,6 @@ const App = () => {
                                 <Route path="/" element={<Ecommerce />}/>
                                 <Route path="/ecommerce" element={<Ecommerce />} />
 
-                                {/*temp*/}
-                                <Route path="/cart" element={<Cart />} />
-
                                 {/* Pages */}
                                 <Route path="/orders" element={<Orders />} />
                                 <Route path="/employees" element={<Employees />} />

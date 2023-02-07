@@ -18,6 +18,8 @@ export const ContextProvider = ({ children }) => {
     const [themeSettings, setThemeSettings] = useState(false)
     const [cartSettings, setCart] = useState(false)
     const [chatSettings, setChat] = useState(false)
+    const [notificationSettings, setNotification] = useState(false)
+    const [userProfileSettings, setUserProfile] = useState(false)
     const setMode = (e) => {
         setCurrentMode(e.target.value);
 
@@ -37,7 +39,8 @@ export const ContextProvider = ({ children }) => {
         setIsClicked({...initialState, [clicked]:true});
         setCart(false);
         setChat(false);
-        
+        setNotification(false);
+        setUserProfile(false)    
     }
    
     return (
@@ -54,7 +57,9 @@ export const ContextProvider = ({ children }) => {
                     themeSettings, setThemeSettings,
                     setMode, setColor,
                     cartSettings, setCart,
-                    chatSettings,setChat
+                    chatSettings,setChat,
+                    notificationSettings, setNotification,
+                    userProfileSettings, setUserProfile
                     }}
                     >
                 {children}
