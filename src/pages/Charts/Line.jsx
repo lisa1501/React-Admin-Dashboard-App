@@ -9,7 +9,6 @@ const Line = () => {
                 <LineChart />
             </div>
         </div>
-    
     )
 }
 

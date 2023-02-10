@@ -22,7 +22,6 @@ const Employees = () => {
                 </ColumnsDirective>
                 <Inject services={[Page, Search, Toolbar]} />
             </GridComponent>
-
         </div>
     )
 }

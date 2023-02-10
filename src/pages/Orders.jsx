@@ -22,7 +22,6 @@ const Orders = () => {
                 <Inject services={[Resize, Sort, ContextMenu, Filter, Page, 
                 ExcelExport, Edit, PdfExport ]} />
             </GridComponent>
-
         </div>
     )
 }

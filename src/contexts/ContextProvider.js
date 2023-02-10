@@ -42,7 +42,7 @@ export const ContextProvider = ({ children }) => {
         setNotification(false);
         setUserProfile(false)    
     }
-   
+
     return (
         <StateContext.Provider 
             value={{ 

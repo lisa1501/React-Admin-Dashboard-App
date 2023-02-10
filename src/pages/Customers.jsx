@@ -23,7 +23,6 @@ const Customers = () => {
                 </ColumnsDirective>
                 <Inject services={[Page, Toolbar, Selection, Edit, Sort, Filter]} />
             </GridComponent>
-
         </div>
     )
 }
