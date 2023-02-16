@@ -6,7 +6,7 @@ import { Header } from '../components';
 const change = (args) => {
     document.getElementById('preview').style.backgroundColor = args.currentValue.hex;
 };
-
+const CustomColorPicker = ({ id, mode }) => <ColorPickerComponent id={id} mode={mode} modeSwitcher={false} inline showButtons={false} change={change} />;
 
 const ColorPicker = () => {
     return (
@@ -18,7 +18,7 @@ const ColorPicker = () => {
                 <div className="flex justify-center items-center gap-20 flex-wrap">
                     <div>
                         <p className="text-2xl font-semibold mt-2 mb-4">Inline Pallete</p>
-                        <ColorPickerComponent
+                        <CustomColorPicker
                             id="inline-pallete"
                             mode="Palette"
                             modeSwitcher={false}
@@ -30,7 +30,7 @@ const ColorPicker = () => {
                     <div>
                         <p className="text-2xl font-semibold 
                         mt-2 mb-4">Inline Picker</p>
-                        <ColorPickerComponent
+                        <CustomColorPicker
                             id="inline-pallete"
                             mode="Picker"
                             modeSwitcher={false}
