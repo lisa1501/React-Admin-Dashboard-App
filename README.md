@@ -21,6 +21,15 @@ Seven charts and Some additional widgets such as
 [Click here to see it in action!](https://halisa-dashboard-app.netlify.app/)
 
 <br>
+
+## Installation
+
+- `git clone <this_url> && cd <repo_name>`
+- install npm on the repo.
+ 
+  - `npm install`
+ -  run npm start
+
 # Technologies Used
   The front end was created using Javascript and rendered using React. The Site was styled with the use of tailwindcss.
 <br>
