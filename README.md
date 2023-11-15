@@ -24,7 +24,7 @@ Seven charts and Some additional widgets such as
 
 ## Installation
 
-- `git clone [<this_url>](https://github.com/lisa1501/React-Admin-Dashboard-App.git) && cd <repo_name>`
+- `git clone https://github.com/lisa1501/React-Admin-Dashboard-App.git && cd <repo_name>`
 - install npm on the repo.
  
   - `npm install`
